@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Music Player</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<div class="desktop">
+    <div class="overlap-wrapper">
+        <div class="overlap">
+            <img class="record-base" src="img/recordbase.png" />
+
+            <img class="volume-button" src="img/volume.png" />
+
+            <img class="vinyl" src="img/vinyl.png" />
+
+            <img class="arm" src="img/arm.png" />
+
+            <img class="backward" src="img/backarrow.png" />
+
+            <img class="forward" src="img/forwardarrow.png" />
+
+<!--            external element-->
+            <iframe class="youtube"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/eH3giaIzONA"
+                    frameborder="0"
+                    allowfullscreen
+            ></iframe>
+
+            <iframe class="spotify" src="https://open.spotify.com/embed/track/2tUBqZG2AbRi7Q0BIrVrEj?utm_source=generator" width="300" height="380"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+
+
+            <button class="powerButton" onclick="toggleAnimation()">
+            <img class="power" src="img/power.png"/>
+            </button>
+
+            <button class="play2" onclick="toggleAudio()">
+                <img src="img/play.png" class="play"/>
+            </button>
+                <audio id="song" preload="auto">
+                     <source src="audio/Dance.mp3" ></source>
+                </audio>
+
+
+
+            <img class="bluenote" src="img/bluenote.png" />
+            <img class="rednote" src="img/rednote.png" />
+            <img class="orangenote" src="img/orangenote.png" />
+            </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
